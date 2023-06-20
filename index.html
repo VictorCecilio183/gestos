@@ -1,0 +1,71 @@
+ 
+<html>
+    <head>
+      <title>Emoción a emoji</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style (1).css">
+    </head>
+  
+    <body>
+   <div class="container">
+
+    <center>
+      <h3 class="btn btn-warning heading">Aplicacion de gestos manuales
+        <br>
+        <span>&#9994;</span>
+        <span>&#9995;</span>
+        <span>&#128070;</span>
+        <span>&#128075;</span>
+        <span>&#128079;</span>
+        <span>&#128406;</span>
+      </h3>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Toma tu foto para generar emoji
+          <br>
+          <b style="color: yellowgreen;">¿Se ve genial?</b>
+          <br>
+          <b style="color: rgb(17, 18, 16);">¿Estas bien?</b>
+          <br>
+          <b style="color: rgb(205, 50, 50);">¿Ganaste?</b>
+          <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Vista de la camara web - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="take_snapshot();" class="btn btn-warning">Capturar imagen</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediccion 1-</label>
+        <p class="emotion_name" id="result_emotion_name"></p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+        <p class="emoji" id="update_emoji"></p>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Instantanea-</label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check();" class="btn btn-success">Predecir gesto</button>
+      </div>
+
+    </center>
+   </div>
+  
+   
+  
+  <script src="main (1).js"></script>
+  
+    </body>
+  </html>
+  
